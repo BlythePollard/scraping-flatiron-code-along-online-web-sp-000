@@ -43,7 +43,6 @@ class Scraper
   site = "https://www.goodreads.com"  #enter your site to test here
 
 def homepage_genres
-  binding.pry
   doc = Nokogiri::HTML(open(site))
   doc.css("div.gr-list0flinks").each do |genres|
   genres.css("li.gr-list0flinks__item").text
