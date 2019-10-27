@@ -48,6 +48,7 @@ def homepage_genres
   doc.css("div.gr-list0flinks").each do |genres|
   genres.css("li.gr-list0flinks__item").text
 end
+end
 
 end
 
