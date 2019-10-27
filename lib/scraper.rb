@@ -40,15 +40,14 @@ require 'pry'
 # Scraper.new.print_courses
 
 class Scraper
- # @@page = "https://www.goodreads.com"  #enter your site to test here
+  site = "https://www.goodreads.com"  #enter your site to test here
 
 def homepage_genres
   binding.pry
-  doc = Nokogiri::HTML(open(@@page))
-  # doc.css("div.gr-list0flinks").each do |genres|
-  # genres.css("li.gr-list0flinks__item").text
-#end
+  doc = Nokogiri::HTML(open(site))
+  doc.css("div.gr-list0flinks").each do |genres|
+  genres.css("li.gr-list0flinks__item").text
+end
 end
 
 end
-
