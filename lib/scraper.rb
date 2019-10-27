@@ -40,7 +40,7 @@ require 'pry'
 # Scraper.new.print_courses
 
 class Scraper
-  #doc = "https://www.goodreads.com"  #enter your site to test here
+  doc = "https://www.goodreads.com"  #enter your site to test here
 
 def homepage_genres
   binding.pry
