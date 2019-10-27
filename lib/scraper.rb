@@ -44,7 +44,7 @@ class Scraper
 
 def homepage_genres
   binding.pry
-  # doc = Nokogiri::HTML(open(@@page))
+  doc = Nokogiri::HTML(open(@@page))
   # doc.css("div.gr-list0flinks").each do |genres|
   # genres.css("li.gr-list0flinks__item").text
 #end
